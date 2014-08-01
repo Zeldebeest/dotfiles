@@ -1,81 +1,81 @@
-set nocompatible
-let mapleader = ","
-set encoding=utf-8
-set nu
-set binary
-set term=xterm-256color
 colorscheme mustang
 set bg=dark
-set showcmd
+let mapleader=','
+" make things consistent across distros
+set nocompatible
+set encoding=utf-8  
+filetype plugin indent on  
+" visual bell on error (no sound)
+set visualbell  
+set nu 
+" Lets vim open binary file
+set binary  
+" enable 256 colors in default vim
+set term=xterm-256color  
+" Show partial commands in the last line of screen
+set showcmd  
+" folding options (opening and closing by indentation)
 set foldenable
 set foldmethod=indent
 set foldlevelstart=99
-set autoindent
-set softtabstop=2
+" 2 spaces instead of tabs
+set softtabstop=2  
 set shiftwidth=2
-set expandtab
-set mouse=a
-syntax on
-set history=1000
-set undolevels=1000
-set backspace=indent,eol,start
-set ruler
-set cursorline
-set cursorcolumn
-set showmatch
-set matchtime=3
-set wildmenu
-set wildmode=list:longest,full
+" Enable use of mouse <-- AWESOME
+set mouse=a  
+syntax on 
+set history=1000 
+set undolevels=1000 
+" Sane deleting of eol etc.
+set backspace=indent,eol,start  
+" Display cursor position in last line of file
+set ruler  
+set cursorline 
+set cursorcolumn 
+" Briefly jump to other brace when inserting one.
+set showmatch 
+" better command-line completion
+set wildmenu  
+set wildmode=list:longest,full 
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.a,*.o,*.aux,*.out
-set showbreak=>
-set pastetoggle=<F2>
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
-set hidden
-set switchbuf=useopen
-set scrolljump=5
-set scrolloff=3
-set gdefault
-set shell=bash\ --login
-nnoremap ' `
-nnoremap ` '
-nnoremap ; :
-nnoremap <Space> ;
-nnoremap j gj
-nnoremap k gk
-vmap fj <ESC>
+" character to show after line break
+set showbreak=> 
+" use F2 to toggle between :paste mode and not.
+set pastetoggle=<F2> 
+" ignore case in search
+set ignorecase  
+" except when one uses caps in search
+set smartcase  
+set scrolljump=5 
+" how far from edge of screen before scolloff
+set scrolloff=1 
+" defaut :%s/a/b does all on line, use /g at end to unset
+set gdefault 
+nnoremap Q <nop> 
+nnoremap ; : 
+nnoremap <Space> ; 
+nnoremap = +
+vmap fj <ESC> 
 imap fj <ESC>
-imap ( ()<Left>
-imap [ []<Left>
+imap ( ()<Left> 
+imap [ []<Left> 
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
-nnoremap <leader>t %
-map <silent> <leader>n :botright vnew<CR>  
-map <leader>b ^
-map <leader>e $
-nmap <silent> <leader>cv :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-nmap <silent> ,/ :nohlsearch<CR>
-nmap <silent> <leader>mk :make<CR>
-nnoremap <Tab> W
-vnoremap <Tab> W
-nnoremap \ B
-vnoremap \ B
-vmap Q gq
-nmap Q gqap
-nmap <left> <C-W>h
+nnoremap <leader>t % 
+map <leader>b ^ 
+map <leader>e $ 
+nmap <Tab> W 
+vmap <Tab> W
+nmap \ B 
+vmap \ B
+nmap <left> <C-W>h 
 nmap <right> <C-W>l
 nmap <up> <C-W>k
 nmap <down> <C-W>j
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-filetype plugin indent on
-autocmd FileType c,cpp,java,js,javascript,tex,php,python autocmd BufWritePre <buffer> :%s/\s\+$//e
-autocmd BufReadPre *.txt setlocal spell
+" automatically remove trailing whitespace from code
+autocmd FileType c,cpp,java,js,javascript,tex,php,python autocmd BufWritePre <buffer> :%s/\s\+$//e 
+autocmd BufReadPre *.txt setlocal spell 
 autocmd BufReadPre *.tex setlocal spell
-let g:indent_guides_enable_on_vim_startup = 0
-highlight SpellBad term=underline gui=undercurl guisp=Orange
+highlight SpellBad term=underline gui=undercurl guisp=Orange 
