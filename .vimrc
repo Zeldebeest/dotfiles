@@ -40,8 +40,6 @@ set wildmode=list:longest,full
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.a,*.o,*.aux,*.out
 " character to show after line break
 set showbreak=> 
-" use F2 to toggle between :paste mode and not.
-set pastetoggle=<F2> 
 " ignore case in search
 set ignorecase  
 " except when one uses caps in search
@@ -57,8 +55,6 @@ nnoremap <Space> ;
 nnoremap = +
 vmap fj <ESC> 
 imap fj <ESC>
-imap ( ()<Left> 
-imap [ []<Left> 
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
@@ -70,10 +66,10 @@ nmap <Tab> W
 vmap <Tab> W
 nmap \ B 
 vmap \ B
-nmap <left> <C-W>h 
-nmap <right> <C-W>l
-nmap <up> <C-W>k
-nmap <down> <C-W>j
+nmap <left> <C-W><left>
+nmap <right> <C-W><right>
+nmap <up> <C-W><up>
+nmap <down> <C-W><down>
 " automatically remove trailing whitespace from code
 autocmd FileType c,cpp,java,js,javascript,tex,php,python autocmd BufWritePre <buffer> :%s/\s\+$//e 
 autocmd BufReadPre *.txt setlocal spell 
