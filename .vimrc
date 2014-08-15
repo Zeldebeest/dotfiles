@@ -3,6 +3,8 @@ set bg=dark
 let mapleader=','
 " make things consistent across distros
 set nocompatible
+set cc=80
+hi ColorColumn ctermbg=10 guibg=10
 set encoding=utf-8  
 filetype plugin indent on  
 " visual bell on error (no sound)
@@ -19,7 +21,7 @@ set foldenable
 set foldmethod=indent
 set foldlevelstart=99
 " 2 spaces instead of tabs
-set softtabstop=2  
+set softtabstop=2
 set shiftwidth=2
 " Enable use of mouse <-- AWESOME
 set mouse=a  
