@@ -51,8 +51,8 @@ set scrolljump=5
 set scrolloff=1 
 " defaut :%s/a/b does all on line, use /g at end to unset
 set gdefault 
-nnoremap Q <nop> 
-nnoremap ; : 
+nnoremap Q <nop>
+nnoremap ; :
 nnoremap <Space> ; 
 nnoremap = +
 vmap fj <ESC> 
@@ -64,6 +64,9 @@ inoremap <C-k> <Up>
 nnoremap <leader>t % 
 map <leader>b ^ 
 map <leader>e $ 
+" move within wrapped lines
+nmap j gj
+nmap k gk
 nmap <Tab> W 
 vmap <Tab> W
 nmap \ B 
