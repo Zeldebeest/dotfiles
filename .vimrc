@@ -18,7 +18,7 @@ set term=xterm-256color
 set showcmd  
 " folding options (opening and closing by indentation)
 set foldenable
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevelstart=99
 " 2 spaces instead of tabs
 set softtabstop=2
@@ -53,7 +53,7 @@ set scrolloff=1
 set gdefault 
 nnoremap Q <nop>
 nnoremap ; :
-nnoremap <Space> ; 
+nnoremap <Space> za
 nnoremap = +
 vmap fj <ESC> 
 imap fj <ESC>
