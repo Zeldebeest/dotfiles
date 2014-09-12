@@ -1,7 +1,6 @@
 PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
 export PATH=/usr/local/bin:$PATH
-export xfel_data=/Volumes/Data/XFEL
-export PSOURCE=~/Dropbox/projects/phenix_src/cctbx_project
+export PSOURCE=~/projects/phenix_src/cctbx_project/xfel
 export PBUILD=~/phenix-build
 # Configure enviroment for cctbx.xfel
 alias cctbx_setup="test -r ~/phenix-build/setpaths.sh && \
