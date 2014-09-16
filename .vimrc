@@ -53,7 +53,8 @@ set scrolloff=1
 set gdefault 
 nnoremap Q <nop>
 nnoremap ; :
-nnoremap <Space> za
+nnoremap <Space> ;
+nnoremap <Tab> za
 nnoremap = +
 vmap fj <ESC> 
 imap fj <ESC>
@@ -67,9 +68,7 @@ map <leader>e $
 " move within wrapped lines
 nmap j gj
 nmap k gk
-nmap <Tab> W 
 vmap <Tab> W
-nmap \ B 
 vmap \ B
 nmap <left> <C-W><left>
 nmap <right> <C-W><right>
