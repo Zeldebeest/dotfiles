@@ -7,7 +7,7 @@ alias cctbx_setup="test -r ~/phenix-build/setpaths.sh && \
   . ~/phenix-build/setpaths.sh"
 alias l="ls -G"
 alias ll="ls -lthraG"
-alias slac="ssh -YMCA zeldin@psexport.slac.stanford.edu"
+alias slac="ssh -YMCA zeldin@pslogin.slac.stanford.edu"
 alias atb="ssh -YMCA zeldin@atbfs2.stanford.edu"
 alias viper="ssh -YMCA zeldin@viper.lbl.gov"
 
