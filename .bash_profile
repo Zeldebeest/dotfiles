@@ -3,8 +3,8 @@ export PATH=/usr/local/bin:$PATH
 export PSOURCE=~/projects/phenix_src/cctbx_project/xfel
 export PBUILD=~/phenix-build
 # Configure enviroment for cctbx.xfel
-alias cctbx_setup="test -r ~/phenix-build/setpaths.sh && \
-  . ~/phenix-build/setpaths.sh"
+alias cctbx_setup="test -r ~/phenix_build/setpaths.sh && \
+  . ~/phenix_build/setpaths.sh"
 alias l="ls -G"
 alias ll="ls -lthraG"
 alias slac="ssh -YMCA zeldin@psexport.slac.stanford.edu"
@@ -25,3 +25,6 @@ export EDITOR=vim
 export PROMPT_COMMAND="history -a; history -n"
 echo ".bash_profile complete"
 
+
+# added by Miniconda 3.7.3 installer
+export PATH="/usr/local/bin/miniconda/bin:$PATH"
