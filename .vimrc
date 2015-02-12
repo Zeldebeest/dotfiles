@@ -20,9 +20,9 @@ set showcmd
 set foldenable
 set foldmethod=syntax
 set foldlevelstart=99
-" 2 spaces instead of tabs
-set softtabstop=2
-set shiftwidth=2
+" 4 spaces instead of tabs
+set softtabstop=4
+set shiftwidth=4
 " Enable use of mouse <-- AWESOME
 set mouse=a  
 syntax on 
