@@ -53,7 +53,7 @@ set scrolloff=1
 set gdefault 
 nnoremap Q <nop>
 nnoremap ; :
-nnoremap <Space> W
+nnoremap <Space> ;
 nnoremap = +
 vmap fj <ESC> 
 imap fj <ESC>
@@ -68,9 +68,7 @@ map <leader>e $
 nmap j gj
 nmap k gk
 imap ww <Esc>:w<Cr>
-nmap <Tab> za 
 vmap <Tab> W
-nmap \ B 
 vmap \ B
 nmap <left> <C-W><left>
 nmap <right> <C-W><right>
