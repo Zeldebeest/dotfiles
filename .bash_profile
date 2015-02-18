@@ -14,12 +14,12 @@ export EDITOR=vim
 export PROMPT_COMMAND="history -a; history -n"
 
 # CCTBX/Stanford stuff
-export PSOURCE=~/projects/phenix_src/cctbx_project/xfel
-export PBUILD=~/phenix-build
-alias cctbx_setup="test -r ~/projects/dials/build/setpaths.sh && \
-  . ~/projects/dials/build/setpaths.sh"
-alias slac="ssh -YMCA zeldin@psexport.slac.stanford.edu"
-alias atb="ssh -YMCA zeldin@atbfs2.stanford.edu"
-alias viper="ssh -YMCA zeldin@viper.lbl.gov"
-export BOOST_ADAPTBX_FPE_DEFAULT=1
-export BOOST_ADAPTBX_SIGNALS_DEFAULT=1
+#export PSOURCE=~/projects/phenix_src/cctbx_project/xfel
+#export PBUILD=~/phenix-build
+#alias cctbx_setup="test -r ~/projects/dials/build/setpaths.sh && \
+#  . ~/projects/dials/build/setpaths.sh"
+#alias slac="ssh -YMCA zeldin@psexport.slac.stanford.edu"
+#alias atb="ssh -YMCA zeldin@atbfs2.stanford.edu"
+#alias viper="ssh -YMCA zeldin@viper.lbl.gov"
+#export BOOST_ADAPTBX_FPE_DEFAULT=1
+#export BOOST_ADAPTBX_SIGNALS_DEFAULT=1
